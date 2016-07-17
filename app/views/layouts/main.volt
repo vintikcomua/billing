@@ -8,16 +8,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">ISP Billing</a>
+            {{ link_to("","ISP Billing", "class":"navbar-brand") }}
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Головна</a></li>
-              <li><a href="#">Тарифи</a></li>
-              <li><a href="#">Новини</a></li>
+              <li class="active">{{ link_to("","Головна") }}</li>
+              <li>{{ link_to("tariff","Тарифи") }}</li>
+              <li>{{ link_to("news","Новини") }}</li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="">Контакти</a></li>
+              <li>{{ link_to("contact","Контакти") }}</li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
